@@ -1,5 +1,13 @@
 # twitter-utils
 Utilities for Twitter API
+
  1. get-bearer.sh - Obtain a bearer token for Twitter application-only auth
     Usage : 
-     ./get-bearer.sh [-k <consumer_key>] [-s <consumer_secret>] (-h for help) 
+     ./get-bearer.sh [-k <consumer_key>] [-s <consumer_secret>] (-h for help)
+
+ 2. get-friends.sh - Obtain a user's friends (upto 5000 only!)
+    Usage: 
+     ./get-friends.sh [-a <auth_bearer>] [-s <screen_name>] (-h for help)
+
+    Example:
+     ./get-friends.sh -a foo -s bar | jq .ids[]
