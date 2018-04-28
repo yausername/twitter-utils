@@ -22,8 +22,9 @@ Utilities for Twitter API
 
     ```
 	Usage: 
-	 ./get-tweets.sh [-a <auth_bearer>] [-s <screen_name>] (-h for help)
+	 ./get-tweets.sh [-a <auth_bearer>] [-s <screen_name>] [-m <max_id>] (-h for help)
 	 
 	Example:
 	 ./get-tweets.sh -a foo -s realDonaldTrump | jq '.[].text'
+         ./get-tweets.sh -a foo -s realDonaldTrump -m 954679973570383872 | jq '.[].text'
     ```
