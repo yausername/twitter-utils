@@ -26,5 +26,5 @@ Utilities for Twitter API
 	 
 	Example:
 	 ./get-tweets.sh -a foo -s realDonaldTrump | jq '.[].text'
-         ./get-tweets.sh -a foo -s realDonaldTrump -m 954679973570383872 | jq '.[].text'
+	 ./get-tweets.sh -a foo -s realDonaldTrump -m 954679973570383872 | jq '.[].text'
     ```
